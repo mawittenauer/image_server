@@ -1,0 +1,44 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pi Image Carousel</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Pi Image Carousel</h1>
+        <div class="status" id="status">Starting...</div>
+      </div>
+
+      <div class="carousel">
+        <div class="stage">
+          <div class="empty" id="emptyState" style="display:none;">
+            Drop image files into <span class="kbd">public/images</span> and refresh.
+            <div style="margin-top:10px; font-size:12px;">
+              Supported: JPG, PNG, GIF, WebP
+            </div>
+          </div>
+          <img id="carouselImage" src="" alt="" />
+        </div>
+
+        <div class="controls">
+          <div class="btns">
+            <button id="prevBtn" type="button">◀ Prev</button>
+            <button id="nextBtn" type="button">Next ▶</button>
+            <button id="playBtn" type="button">Play</button>
+          </div>
+
+          <div class="meta" id="meta">
+            Tip: <span class="kbd">←</span> <span class="kbd">→</span> to navigate, <span class="kbd">space</span> to play/pause
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

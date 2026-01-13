@@ -1,0 +1,45 @@
+/* public/styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Remove all layout padding */
+body {
+  display: block;
+}
+
+/* Fullscreen image container */
+.stage {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 1;
+}
+
+/* Make the image fill the screen */
+.stage img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;   /* Fill screen, crop if needed */
+  display: block;
+}
+
+/* Hide the UI chrome */
+.header,
+.controls,
+.meta,
+.status {
+  display: none !important;
+}
