@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+/coverage
+
+# Environment variables
+.env
+.env.local
+
+# Build artifacts
+build
+dist
+.nyc_output
+*.log
+*.gz
+
+# Optional: OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode
