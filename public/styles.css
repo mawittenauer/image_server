@@ -33,6 +33,7 @@ body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;   /* Fill screen, crop if needed */
+  object-position: top;  /* Align top of image with top of screen */
   display: block;
 }
 
